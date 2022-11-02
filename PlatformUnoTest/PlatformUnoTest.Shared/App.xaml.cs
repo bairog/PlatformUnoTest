@@ -51,6 +51,10 @@ namespace PlatformUnoTest
             _window = Microsoft.UI.Xaml.Window.Current;
 #endif
 
+
+            EmployeeListViewModel viewModel = new();
+            _window.DataContext = viewModel;
+
             var rootFrame = _window.Content as Frame;
 
             // Do not repeat app initialization when the Window already has content,
