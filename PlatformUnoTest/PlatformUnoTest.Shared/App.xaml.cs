@@ -15,6 +15,8 @@ namespace PlatformUnoTest
     {
         private Window _window;
 
+        internal static EmployeeListViewModel viewModel = null;
+
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().
@@ -52,8 +54,8 @@ namespace PlatformUnoTest
 #endif
 
 
-            EmployeeListViewModel viewModel = new();
-            _window.DataContext = viewModel;
+            /*EmployeeListViewModel */viewModel = new();
+            //_window.DataContext = viewModel;
 
             var rootFrame = _window.Content as Frame;
 

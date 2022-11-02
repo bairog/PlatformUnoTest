@@ -25,6 +25,8 @@ namespace PlatformUnoTest
         public MainPage()
         {
             this.InitializeComponent();
+
+            this.DataContext = App.viewModel;
         }
     }
 }
