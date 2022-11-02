@@ -5,11 +5,18 @@
     xmlns:local="using:PlatformUnoTest"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="clr-namespace:CommunityToolkit.WinUI.UI.Controls;assembly=CommunityToolkit.WinUI.UI.Controls.DataGrid"
     mc:Ignorable="d"    
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-      <TextBlock Text="Hello, world!" Margin="20" FontSize="30" />
-      <Button>Click me!</Button>
+      <controls:DataGrid x:Name="dataGrid">
+            <controls:DataGrid.Columns>
+                <controls:DataGridTextColumn Header="Rank"/>
+                <controls:DataGridComboBoxColumn Header="Mountain"/>
+            </controls:DataGrid.Columns>
+      </controls:DataGrid>
+      <!--<TextBlock Text="Hello, world!" Margin="20" FontSize="30" />
+      <Button>Click me!</Button>-->
     </Grid>
 </Page>
