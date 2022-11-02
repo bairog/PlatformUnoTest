@@ -1,7 +1,0 @@
-{
-  "profiles": {
-    "PlatformUnoTest.Windows": {
-      "commandName": "MsixPackage"
-    }
-  }
-}
